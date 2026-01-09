@@ -3,15 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Rent & Buy Match</title>
+    <title>Support | Rent & Buy Match</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --card-bg: #121212;
+            --primary-green: #32D74B; /* Matches your app button */
+            --text-main: #FFFFFF;
+            --text-secondary: #A1A1A1;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 40px 20px;
+        }
+
+        .icon-box {
+            margin-bottom: 30px;
+        }
+
+        .icon-box svg {
+            width: 80px;
+            height: 80px;
+            fill: var(--primary-green);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: #000000;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+            opacity: 0.9;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 12px;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Customer Support</h1>
-    <p>If you need assistance, please contact us at <a href="mailto:support@rentandbuymatch.com">support@rentandbuymatch.com</a>.</p>
-    <h2>Frequently Asked Questions</h2>
-    <ul>
-        <li><strong>How do I reset my password?</strong> Please click on 'Forgot Password' on the login page.</li>
-        <li><strong>How can I contact support?</strong> You can email us at support@rentandbuymatch.com or fill out the contact form below.</li>
-    </ul>
+
+    <div class="container">
+        <div class="icon-box">
+            <!-- Simple House Icon matching your app theme -->
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </div>
+
+        <h1>Customer Support</h1>
+        <p>Need assistance with Rent & Buy Match? Our team is here to help you find your dream home.</p>
+
+        <a href="mailto:support@rentandbuymatch.com" class="btn">Email Support</a>
+
+        <div class="footer">
+            &copy; 2026 Rent & Buy Match Malta
+        </div>
+    </div>
+
 </body>
 </html>
