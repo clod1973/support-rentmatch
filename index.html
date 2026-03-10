@@ -81,6 +81,18 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+
+        /* Added footer link styles for visibility and accessibility */
+        .footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .footer a:hover,
+        .footer a:focus {
+            text-decoration: underline;
+            color: var(--text-main);
+        }
     </style>
 </head>
 <body>
@@ -97,7 +109,9 @@
         <a href="mailto:support@rentandbuymatch.com" class="btn">Email Support</a>
 
         <div class="footer">
-            &copy; 2026 Rent & Buy Match Malta
+            © 2026 Rent & Buy Match Malta ·
+            <a href="https://www.rentandbuymatch.com/privacy">Privacy Policy</a> ·
+            <a href="https://www.rentandbuymatch.com/terms">Terms</a>
         </div>
     </div>
 
