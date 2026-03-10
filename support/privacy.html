@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Rent & Buy Match</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | Rent &amp; Buy Match</title>
+    <meta name="description" content="Privacy Policy for Rent &amp; Buy Match. Learn how we collect, use, and protect your data, and how to contact us with privacy requests." />
+    <link rel="canonical" href="https://www.rentandbuymatch.com/support/privacy" />
+
     <style>
         :root {
             --bg-color: #000000;
@@ -11,7 +14,11 @@
             --primary-green: #32D74B;
             --text-main: #FFFFFF;
             --text-secondary: #A1A1A1;
+            --link: #32D74B;
+            --link-hover: #29b53f;
         }
+
+        * { box-sizing: border-box; }
 
         body {
             margin: 0;
@@ -20,17 +27,59 @@
             color: var(--text-main);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+        }
+        a:hover, a:focus {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        .site-header, .site-footer {
+            background: #0b0b0b;
+            border-bottom: 1px solid #1e1e1e;
+        }
+        .site-footer {
+            border-top: 1px solid #1e1e1e;
+            border-bottom: none;
+            margin-top: auto;
+        }
+        .nav-wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .brand {
+            font-weight: 700;
+            color: var(--primary-green);
+        }
+        .nav-links a {
+            margin-left: 16px;
+            font-size: 14px;
+        }
+
+        .main {
+            display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 20px;
-            text-align: left;
+            padding: 20px 16px 40px;
         }
 
         .container {
+            width: 100%;
             max-width: 800px;
-            padding: 40px;
+            padding: 32px;
             background-color: var(--card-bg);
             border-radius: 10px;
+            box-shadow: 0 0 0 1px rgba(255,255,255,0.04);
         }
 
         h1, h2, h3 {
@@ -39,24 +88,35 @@
 
         h1 {
             font-size: 32px;
-            margin-bottom: 20px;
+            margin: 0 0 16px 0;
         }
 
         h2 {
             font-size: 24px;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            margin: 28px 0 12px 0;
         }
 
         p {
             color: var(--text-secondary);
             font-size: 16px;
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin: 0 0 16px 0;
         }
 
-        .footer {
-            margin-top: 50px;
+        ul {
+            color: var(--text-secondary);
+            padding-left: 20px;
+            line-height: 1.6;
+            margin: 0 0 16px 0;
+        }
+
+        .meta {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .footer-note {
             font-size: 12px;
             color: var(--text-secondary);
             text-align: center;
@@ -65,35 +125,65 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>Privacy Policy – Rent & Buy Match</h1>
-        <p><strong>Last updated:</strong> December 2025</p>
-
-        <h2>Information We Collect</h2>
-        <p>Rent & Buy Match collects only the information required to operate the app and provide the lead-matching service. This includes your name, contact details, housing preferences, selected locations, and app activity. Payment information is processed securely by Apple and is never stored by us.</p>
-
-        <h2>How We Use Your Data</h2>
-        <ul>
-            <li>Creating and managing your account</li>
-            <li>Matching your rental or purchase preferences with available property options</li>
-            <li>Improving the functionality, performance, and security of the app</li>
-        </ul>
-        <p>We do not sell or share your personal data with third parties for advertising or marketing purposes.</p>
-
-        <h2>Data Storage & Security</h2>
-        <p>All data is encrypted, stored securely, and handled in accordance with GDPR and applicable privacy regulations. Only authorized systems that support the Rent & Buy Match app can access your information.</p>
-
-        <h2>Your Rights</h2>
-        <p>You may request access, correction, or deletion of your data at any time. You can permanently delete your account using the in-app “Delete Account” feature or by contacting us at:</p>
-        <p>Support: <a href="https://www.rentandbuymatch.com/" style="color: var(--primary-green);">https://www.rentandbuymatch.com/</a></p>
-
-        <h2>Scope</h2>
-        <p>This policy applies exclusively to the Rent & Buy Match iOS app.</p>
-
-        <div class="footer">
-            &copy; 2026 Rent & Buy Match Malta
+    <!-- Header with visible links to Home / Privacy / Terms -->
+    <header class="site-header">
+        <div class="nav-wrap">
+            <div class="brand">Rent &amp; Buy Match</div>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="https://www.rentandbuymatch.com/">Home</a>
+                <a href="https://www.rentandbuymatch.com/support/privacy" aria-current="page">Privacy Policy</a>
+                <a href="https://www.rentandbuymatch.com/support/terms">Terms of Service</a>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <main class="main">
+        <div class="container" role="main">
+            <h1>Privacy Policy – Rent &amp; Buy Match</h1>
+            <p class="meta"><strong>Last updated:</strong> December 2025</p>
+
+            <h2>Information We Collect</h2>
+            <p>Rent &amp; Buy Match collects only the information required to operate the app and provide the lead‑matching service. This includes your name, contact details, housing preferences, selected locations, and app activity. Payment information is processed securely by Apple and is never stored by us.</p>
+
+            <h2>How We Use Your Data</h2>
+            <ul>
+                <li>Creating and managing your account</li>
+                <li>Matching your rental or purchase preferences with available property options</li>
+                <li>Improving the functionality, performance, and security of the app</li>
+            </ul>
+            <p>We do not sell or share your personal data with third parties for advertising or marketing purposes.</p>
+
+            <h2>Data Storage &amp; Security</h2>
+            <p>All data is encrypted, stored securely, and handled in accordance with GDPR and applicable privacy regulations. Only authorized systems that support the Rent &amp; Buy Match app can access your information.</p>
+
+            <h2>Your Rights</h2>
+            <p>You may request access, correction, or deletion of your data at any time. You can permanently delete your account using the in‑app “Delete Account” feature or by contacting us.</p>
+
+            <h2>Contact Us</h2>
+            <p>
+                Email: <a href="mailto:support@rentandbuymatch.com">support@rentandbuymatch.com</a><br />
+                Website: <a href="https://www.rentandbuymatch.com/">https://www.rentandbuymatch.com/</a><br />
+                Terms of Service: <a href="https://www.rentandbuymatch.com/support/terms">https://www.rentandbuymatch.com/support/terms</a>
+            </p>
+
+            <h2>Scope</h2>
+            <p>This policy applies exclusively to the Rent &amp; Buy Match iOS app.</p>
+        </div>
+    </main>
+
+    <!-- Footer with the same visible links -->
+    <footer class="site-footer">
+        <div class="nav-wrap">
+            <div class="footer-note">
+                &copy; 2026 Rent &amp; Buy Match Malta
+            </div>
+            <nav class="nav-links" aria-label="Footer">
+                <a href="https://www.rentandbuymatch.com/">Home</a>
+                <a href="https://www.rentandbuymatch.com/support/privacy">Privacy Policy</a>
+                <a href="https://www.rentandbuymatch.com/support/terms">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
 
 </body>
 </html>
